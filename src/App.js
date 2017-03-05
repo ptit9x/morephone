@@ -8,7 +8,7 @@ class App extends React.Component {
   render() {
     return (
       <DocumentTitle title='Stormpath Express + React Example'>
-        <div className='MasterPage'>
+        <div className='App'>
           <Header />
           { this.props.children }
           <Footer />

@@ -15,11 +15,14 @@ export default class Header extends React.Component {
               </Link>
             </div>
             <nav id="primary-menu">
+              <Link id="contact" to="/" className="menu-main">
+                <span>Home</span>
+              </Link>
               <Link id="developers" to="/" className="menu-main has-sub-menu">
-                <span>Developers check</span>
+                <span>Developers</span>
                 <ul className="sub-menu-secondary">
-                  <li><Link className="menu-child" to="/install">Install</Link></li>
-                  <li><Link className="menu-child" to="/tutorials">Tutorials</Link></li>
+                  <li><Link className="menu-child" to="/">Install</Link></li>
+                  <li><Link className="menu-child" to="/">Tutorials</Link></li>
                 </ul>
               </Link>
               <Link id="contact" to="/contact" className="menu-main">
