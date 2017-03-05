@@ -1,19 +1,19 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import DocumentTitle from 'react-document-title';
 
-class App extends Component {
+import Header from './parts/Header';
+import Footer from './parts/Footer';
+
+class App extends React.Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+      <DocumentTitle title='Stormpath Express + React Example'>
+        <div className='MasterPage'>
+          <Header />
+          { this.props.children }
+          <Footer />
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      </DocumentTitle>
     );
   }
 }
