@@ -2,6 +2,8 @@ import { Link } from 'react-router';
 import React from 'react';
 import { NotAuthenticated, LoginLink } from 'react-stormpath';
 
+import HeaderIndex from '../parts/HeaderIndex';
+
 export default class IndexPage extends React.Component {
   static contextTypes = {
     user: React.PropTypes.object
@@ -10,6 +12,7 @@ export default class IndexPage extends React.Component {
   render() {
     return (
       <div>
+        <HeaderIndex />
         <header>
           <div id="meteor_particles">
             <div id="banner-home">
@@ -92,7 +95,9 @@ export default class IndexPage extends React.Component {
                 </div>
               </div>
               <div className="action hvr-rectangle-out">
-                <Link href="/showcase" Link="btn-custom"><i Link="icon-icon-next-short"></i>View More Apps</Link>
+                <Link to="/showcase" className="btn-custom">
+                  <i className="icon-icon-next-short"></i>View More Apps
+                </Link>
               </div>
             </div>
           </div>

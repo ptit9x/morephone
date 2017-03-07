@@ -2,11 +2,13 @@ import React from 'react';
 import DocumentTitle from 'react-document-title';
 
 import { RegistrationForm, LoginLink } from 'react-stormpath';
+import Header from '../parts/Header';
 
 export default class RegisterPage extends React.Component {
   render() {
     return (
       <div>
+        <Header />
         <div className="menu-fixed"></div>
         <div className="header-account-page">
           <h3 className="wow fadeInUp">Registration</h3>

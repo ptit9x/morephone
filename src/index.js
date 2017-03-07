@@ -11,6 +11,7 @@ import ChangePasswordPage from './components/ChangePasswordPage';
 import ResetPasswordPage from './components/ResetPasswordPage';
 import ContactPage from './components/ContactPage';
 import ProfilePage from './components/ProfilePage';
+import DashboardPage from './components/DashboardPage';
 
 ReactStormpath.init();
 
@@ -26,6 +27,7 @@ ReactDOM.render(
       <Route path='/contact' component={ContactPage} />
       <AuthenticatedRoute>
         <Route path='/profile' component={ProfilePage} />
+        <Route path='/dashboard' component={DashboardPage} />
       </AuthenticatedRoute>
     </HomeRoute>
   </Router>,

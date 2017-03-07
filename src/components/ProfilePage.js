@@ -17,7 +17,7 @@ export default class ProfilePage extends React.Component {
         </div>
         <div className="info-user-account container wow fadeInUp">
           <div>
-            <img src="https://d14xs1qewsqjcd.cloudfront.net/assets/avartar.png" />
+            <img src="https://d14xs1qewsqjcd.cloudfront.net/assets/avartar.png" alt="" />
             <div className="namePosition">
               <span className="name">ptit9x</span>
               <span className="position">Developer</span>
